@@ -44,7 +44,7 @@ while query != "exit":
 	r = requests.post(url, headers=headers, json=rjson)
 	pr = json.loads(r.text)
 	print("Domino's: " + pr["display"])
-	print("Options: " + get_options(pr["media"][0]["buttons"]))
+	#print("Options: " + get_options(pr["media"][0]["buttons"]))
 	#print(rjson)
 	
 	query = raw_input("You: ")
